@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Step_1') {
       steps {
-        sh 'echo "test"'
+        git(url: 'https://github.com/Pierre-Cng/Jenkins_pipeline.git', branch: 'master')
       }
     }
 
