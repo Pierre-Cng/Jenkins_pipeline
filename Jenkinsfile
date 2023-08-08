@@ -9,7 +9,7 @@ pipeline {
 
     stage('Shell command') {
       steps {
-        sh './script.sh'
+        sh 'sudo ./script.sh'
       }
     }
 
