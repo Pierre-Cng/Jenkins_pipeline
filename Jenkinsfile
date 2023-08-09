@@ -15,7 +15,7 @@ pipeline {
 
     stage('Archive artifacts') {
       steps {
-        archiveArtifacts(artifacts: 'Test-python-pipeline', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: 'src', onlyIfSuccessful: true)
       }
     }
 
