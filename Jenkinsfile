@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('Archive artifacts') {
-      steps {
-        archiveArtifacts(artifacts: 'src', onlyIfSuccessful: true)
-      }
-    }
-
   }
 }
