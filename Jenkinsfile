@@ -9,8 +9,7 @@ pipeline {
 
     stage('Shell command') {
       steps {
-        sh '''sh -e script.sh
-python3 -V'''
+        sh 'sh -e script.sh'
       }
     }
 
