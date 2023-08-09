@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Archive artifacts') {
+      steps {
+        archiveArtifacts(artifacts: 'Test-python-pipeline', onlyIfSuccessful: true)
+      }
+    }
+
   }
 }
