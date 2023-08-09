@@ -3,5 +3,6 @@
 hostname
 whoami
 echo "script is running"
-sudo docker run ubuntu ls
+sudo docker build -t pipeline-test .
+sudo docker run pipeline-test
 echo "script is done"
